@@ -1,0 +1,18 @@
+.sidebar {
+  width: fit-content;
+  background-color: rgba(34, 139, 34, 0.285);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 5px solid #448844;
+  align-items: flex-start;
+}
+
+.sidebar a {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.sidebar a:hover {
+  color: #555;
+}
