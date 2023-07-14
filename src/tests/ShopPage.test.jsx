@@ -2,15 +2,22 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ShopPage from '../components/ShopPage';
+import { BrowserRouter } from 'react-router-dom';
+import { act } from 'react-dom/test-utils';
 
 describe('Increment and decrement functions for cart amount', () => {
   it('increments once on plus click', async () => {
-    render(<ShopPage />);
+    render(
+      <BrowserRouter>
+        <ShopPage />
+      </BrowserRouter>
+    );
     const button = screen.getByRole('button', { name: '+' });
 
-    act(async () => {
+    await act(async () => {
       await userEvent.click(button);
     });
-    expect(screen.getByRole('props.items').textContent).toMatch('1');
+    let num = Number(screen.getByRole('cart').innerHTML);
+    expect(num).toBe(1);
   });
 });
