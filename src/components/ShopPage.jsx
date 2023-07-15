@@ -17,13 +17,11 @@ const ShopPage = () => {
   };
   return (
     <div className="container">
-      <ShoppingCart items={cartAmount} />
+      <ShoppingCart items={cartAmount} className="cart" />
       <div className="nav">
         <Navbar />
       </div>
-
-      <div className="content">
-        <p>content</p>
+      <div className="products">
         <ProductCard
           increment={incrementCartAmount}
           decrement={decrementCartAmount}
