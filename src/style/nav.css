@@ -2,20 +2,18 @@
   width: 10vw;
   background-color: rgba(34, 139, 34, 0.285);
   padding: 20px;
-  display: flex;
-  flex-direction: column;
   border-right: 5px solid #448844;
   align-items: flex-start;
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
 }
 
-.sidebar a {
-  color: #333;
-  margin-bottom: 8px;
-  margin: 6px;
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 36px 6px 8px 6px;
 }
 
-.sidebar a:hover {
-  color: #555;
+.links a:hover {
+  color: rgb(219, 218, 218);
 }

@@ -9,13 +9,14 @@
 
 .cart {
   grid-row: 1 / span 1;
-  grid-column: 1 / span 2;
+  grid-column: 2 / span 1;
 }
 .nav {
   display: flex;
   grid-row: 1 / span 2;
   grid-column: 1 / span 1;
   height: 100vh;
+  width: 90vw;
 }
 
 .products {
@@ -46,13 +47,15 @@ h2 {
 .sticky-bar {
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 87vw;
   text-align: center;
   grid-row: 1 / span 1;
   grid-column: 1 / span 2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: rgba(34, 139, 34, 0.285);
+  justify-self: flex-end;
 }
 
 .checkout {
@@ -68,14 +71,12 @@ h2 {
   font-size: 100%;
   cursor: pointer;
   transition: box-shadow 0.3s;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .checkout:hover {
   background-color: #005ab364;
-}
-
-.sticky-bar > * {
-  margin: 5px 5px 5px 10px;
 }
 
 body {
