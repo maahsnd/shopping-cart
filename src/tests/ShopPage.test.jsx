@@ -20,4 +20,25 @@ describe('Increment and decrement functions for cart amount', () => {
     let num = Number(screen.getByRole('cart').innerHTML);
     expect(num).toBe(1);
   });
+
+  it('decrements once on minus click', async () => {
+    render(
+      <BrowserRouter>
+        <ShopPage />
+      </BrowserRouter>
+    );
+    const plusButton = screen.getByRole('button', { name: '+' });
+    const minusButton = screen.getByRole('button', { name: '-' });
+
+    await act(async () => {
+      await userEvent.click(plusButton);
+    });
+
+    await act(async () => {
+      await userEvent.click(minusButton);
+    });
+
+    let num = Number(screen.getByRole('cart').innerHTML);
+    expect(num).toBe(0);
+  });
 });
