@@ -4,12 +4,12 @@ import Navbar from './Navbar';
 
 const HomePage = () => {
   return (
-    <div className="container">
-      <div className="nav">
+    <div className="homecontainer">
+      <div className="homenav">
         <Navbar />
       </div>
 
-      <div className="content">
+      <div className="homecontent">
         <div>
           <h1>Unnamed retail site title</h1>
           <h2>Welcome to my site</h2>
