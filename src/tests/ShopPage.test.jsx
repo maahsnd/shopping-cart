@@ -17,6 +17,7 @@ describe('Increment and decrement functions for cart amount', () => {
     await act(async () => {
       await userEvent.click(button);
     });
+
     let num = Number(screen.getByRole('cart').innerHTML);
     expect(num).toBe(1);
   });
@@ -33,7 +34,6 @@ describe('Increment and decrement functions for cart amount', () => {
     await act(async () => {
       await userEvent.click(plusButton);
     });
-
     await act(async () => {
       await userEvent.click(minusButton);
     });
@@ -54,11 +54,9 @@ describe('Increment and decrement functions for cart amount', () => {
     await act(async () => {
       await userEvent.click(plusButton);
     });
-
     await act(async () => {
       await userEvent.click(minusButton);
     });
-
     await act(async () => {
       await userEvent.click(minusButton);
     });

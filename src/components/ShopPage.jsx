@@ -11,7 +11,9 @@ const ShopPage = () => {
     setCartAmount((cartAmount) => cartAmount + 1);
   };
   const decrementCartAmount = () => {
-    setCartAmount((cartAmount) => cartAmount - 1);
+    if (cartAmount) {
+      setCartAmount((cartAmount) => cartAmount - 1);
+    }
   };
   return (
     <div className="container">
