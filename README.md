@@ -11,8 +11,6 @@ User can navigate between pages (&/routes) via a navigation bar, to be shown on 
 Shopping cart should have:
 Sticky bar displaying number of items currently in cart.
 Button adjacent to sticky allowing user to checkout and pay (do not implement functionally).
-
-To do:
 Individual card items for each product, to include:
 Input field allowing user to manually enter desired quantity of product.
 Add increment/ decrement button for quantity.
@@ -31,6 +29,4 @@ Title.
 Quantity input.
 Increment/decrement.
 Add to cart button.
-Array of objects with product title, cost, etc.
-
 Nav bar.
