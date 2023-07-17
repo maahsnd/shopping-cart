@@ -28,7 +28,7 @@ const ProductCard = (props) => {
           onChange={(e) => setQuantity(e.target.value)}
           value={quantity}
         />
-        <input type="submit"></input>
+        <input type="submit" value="Add to cart"></input>
       </form>
     </div>
   );
