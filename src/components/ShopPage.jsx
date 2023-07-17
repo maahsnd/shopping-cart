@@ -7,14 +7,6 @@ import ShoppingCart from './shop/ShoppingCart';
 const ShopPage = () => {
   const [cartAmount, setCartAmount] = useState(0);
 
-  const incrementCartAmount = () => {
-    setCartAmount((cartAmount) => cartAmount + 1);
-  };
-  const decrementCartAmount = () => {
-    if (cartAmount) {
-      setCartAmount((cartAmount) => cartAmount - 1);
-    }
-  };
   return (
     <div className="container">
       <ShoppingCart items={cartAmount} className="cart" />
@@ -22,10 +14,7 @@ const ShopPage = () => {
         <Navbar />
       </div>
       <div className="products">
-        <ProductCard
-          increment={incrementCartAmount}
-          decrement={decrementCartAmount}
-        />
+        <ProductCard />
       </div>
     </div>
   );
