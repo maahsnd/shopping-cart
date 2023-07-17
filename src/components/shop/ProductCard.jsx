@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import FormData from 'form-data';
 
 const ProductCard = (props) => {
   const [quantity, setQuantity] = useState(0);
@@ -18,6 +17,7 @@ const ProductCard = (props) => {
 
   return (
     <div className="productCard">
+      <h1>{props.title}</h1>
       <form className="quantityForm" onSubmit={handleSubmit}>
         <label htmlFor="quantity">Quantity</label>
         <input
@@ -28,8 +28,11 @@ const ProductCard = (props) => {
           onChange={(e) => setQuantity(e.target.value)}
           value={quantity}
         />
-        <input type="submit" value="Add to cart"></input>
+        <input className="addToCart" type="submit" value="Add to cart"></input>
       </form>
+      <div className="image">
+        <img src="" alt="Product image absent" />
+      </div>
     </div>
   );
 };

@@ -17,7 +17,11 @@ const ShopPage = () => {
         <Navbar />
       </div>
       <div className="products">
-        <ProductCard addToCart={updateCart} />
+        <ProductCard addToCart={updateCart} title="title" />
+        <ProductCard addToCart={updateCart} title="title" />
+        <ProductCard addToCart={updateCart} title="title" />
+        <ProductCard addToCart={updateCart} title="title" />
+        <ProductCard addToCart={updateCart} title="title" />
       </div>
     </div>
   );
