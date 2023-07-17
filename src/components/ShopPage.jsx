@@ -6,6 +6,9 @@ import ShoppingCart from './shop/ShoppingCart';
 
 const ShopPage = () => {
   const [cartAmount, setCartAmount] = useState(0);
+  const updateCart = (items) => {
+    setCartAmount(items + cartAmount);
+  };
 
   return (
     <div className="container">
@@ -14,7 +17,7 @@ const ShopPage = () => {
         <Navbar />
       </div>
       <div className="products">
-        <ProductCard />
+        <ProductCard addToCart={updateCart} />
       </div>
     </div>
   );
