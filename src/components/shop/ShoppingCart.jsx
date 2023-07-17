@@ -1,11 +1,17 @@
 import React from 'react';
 
 const ShoppingCart = (props) => {
+  const handleClick = () => {
+    props.checkout();
+  };
+
   return (
     <div className="sticky-bar" role="cart">
       Items in cart:
       {props.items}
-      <button className="checkout">Check Out and Pay</button>
+      <button className="checkout" onClick={handleClick}>
+        Check Out and Pay
+      </button>
     </div>
   );
 };

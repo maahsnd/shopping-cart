@@ -9,10 +9,13 @@ const ShopPage = () => {
   const updateCart = (items) => {
     setCartAmount(items + cartAmount);
   };
+  const resetCart = () => {
+    setCartAmount(0);
+  };
 
   return (
     <div className="container">
-      <ShoppingCart items={cartAmount} className="cart" />
+      <ShoppingCart items={cartAmount} checkout={resetCart} className="cart" />
       <div className="nav">
         <Navbar />
       </div>
