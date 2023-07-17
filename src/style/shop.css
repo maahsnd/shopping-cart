@@ -94,6 +94,11 @@ h2 {
   align-items: center;
   background-color: rgba(34, 139, 34, 0.285);
   justify-self: flex-end;
+  font-size: x-large;
+}
+
+.sticky-bar > button {
+  font-size: large;
 }
 
 .addToCart {
