@@ -26,6 +26,7 @@ const ShopPage = () => {
         <ProductCard addToCart={updateCart} title="title" />
         <ProductCard addToCart={updateCart} title="title" />
       </div>
+      <div itemID="output"></div>
     </div>
   );
 };

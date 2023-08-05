@@ -95,6 +95,7 @@ h2 {
   background-color: rgba(34, 139, 34, 0.285);
   justify-self: flex-end;
   font-size: x-large;
+  overflow: hidden;
 }
 
 .sticky-bar > button {
@@ -125,6 +126,17 @@ h2 {
   transition: box-shadow 0.3s;
   margin-right: 15px;
   margin-left: 15px;
+  animation-timing-function: ease;
+  animation-name: slidein;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(300px);
+    opacity: 0.5;
+  }
 }
 
 .checkout:hover,
